@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Anton-Sakharov-hub/goit-react-hw-01-components-main/static/css/main.da73d6e8.css",
-    "main.js": "/Anton-Sakharov-hub/goit-react-hw-01-components-main/static/js/main.89256a1b.js",
+    "main.css": "/Anton-Sakharov-hub/goit-react-hw-01-components-main/static/css/main.a6dd56d7.css",
+    "main.js": "/Anton-Sakharov-hub/goit-react-hw-01-components-main/static/js/main.9650966c.js",
     "index.html": "/Anton-Sakharov-hub/goit-react-hw-01-components-main/index.html",
-    "main.da73d6e8.css.map": "/Anton-Sakharov-hub/goit-react-hw-01-components-main/static/css/main.da73d6e8.css.map",
-    "main.89256a1b.js.map": "/Anton-Sakharov-hub/goit-react-hw-01-components-main/static/js/main.89256a1b.js.map"
+    "main.a6dd56d7.css.map": "/Anton-Sakharov-hub/goit-react-hw-01-components-main/static/css/main.a6dd56d7.css.map",
+    "main.9650966c.js.map": "/Anton-Sakharov-hub/goit-react-hw-01-components-main/static/js/main.9650966c.js.map"
   },
   "entrypoints": [
-    "static/css/main.da73d6e8.css",
-    "static/js/main.89256a1b.js"
+    "static/css/main.a6dd56d7.css",
+    "static/js/main.9650966c.js"
   ]
 }
