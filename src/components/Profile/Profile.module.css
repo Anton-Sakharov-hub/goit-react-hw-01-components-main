@@ -1,0 +1,74 @@
+.cardWrap {
+  margin-top: 15px;
+  width: 300px;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 8px;
+  /* border: 1px solid rgb(228, 228, 228); */
+  overflow: hidden;
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px,
+    rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+}
+
+.thumb {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  /* outline: 1px solid grey; */
+}
+
+.avatar {
+  height: 160px;
+  /* border-radius: 50%; */
+  /* object-fit: cover; */
+}
+.discription {
+  padding: 25px;
+  text-align: center;
+}
+
+.cardInfo {
+  margin-top: 10px;
+}
+
+.mainText {
+  color: black;
+  font-size: 24px;
+  font-weight: 500;
+}
+.secondaryText {
+  color: grey;
+  font-size: 16px;
+}
+
+.stats {
+  display: flex;
+  text-align: center;
+  background-color: #f3f2ff;
+  overflow: hidden;
+}
+
+.statsItem {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 15px;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+  flex-grow: 1;
+}
+
+.statsItem:not(:first-child) {
+  border-left: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.label {
+  composes: secondaryText;
+  margin-bottom: 4px;
+}
+
+.quantity {
+  composes: mainText;
+  font-size: 18px;
+}
