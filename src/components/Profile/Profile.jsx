@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import style from './Profile.module.css';
+import styles from './Profile.module.css';
 
 function addPointerToNumber(number) {
   let stringNumber = String(number);
@@ -26,29 +26,29 @@ function Profile({ user }) {
   } = user;
 
   return (
-    <div className={style.cardWrap}>
-      <div className={style.discription}>
-        <div className={style.thumb}>
-          <img src={avatar} alt={username} className={style.avatar} />
+    <div className={styles.cardWrap}>
+      <div className={styles.discription}>
+        <div className={styles.thumb}>
+          <img src={avatar} alt={`${username}'s avatar`} className={styles.avatar} />
         </div>
-        <p className={clsx(style.cardInfo, style.mainText)}>{username}</p>
-        <p className={`${style.cardInfo} ${style.secondaryText}`}>{tag}</p>
-        <p className={`${style.cardInfo} ${style.secondaryText}`}>{location}</p>
+        <p className={clsx(styles.cardInfo, styles.mainText)}>{username}</p>
+        <p className={`${styles.cardInfo} ${styles.secondaryText}`}>@{tag}</p>
+        <p className={`${styles.cardInfo} ${styles.secondaryText}`}>{location}</p>
       </div>
-      <ul className={style.stats}>
-        <li className={style.statsItem}>
-          <span className={style.label}>Followers </span>
-          <span className={style.quantity}>
+      <ul className={styles.stats}>
+        <li className={styles.statsItem}>
+          <span className={styles.label}>Followers </span>
+          <span className={styles.quantity}>
             {addPointerToNumber(followers)}
           </span>
         </li>
-        <li className={style.statsItem}>
-          <span className={style.label}>Views </span>
-          <span className={style.quantity}>{addPointerToNumber(views)}</span>
+        <li className={styles.statsItem}>
+          <span className={styles.label}>Views </span>
+          <span className={styles.quantity}>{addPointerToNumber(views)}</span>
         </li>
-        <li className={style.statsItem}>
-          <span className={style.label}>Likes </span>
-          <span className={style.quantity}>{addPointerToNumber(likes)}</span>
+        <li className={styles.statsItem}>
+          <span className={styles.label}>Likes </span>
+          <span className={styles.quantity}>{addPointerToNumber(likes)}</span>
         </li>
       </ul>
     </div>
