@@ -18,10 +18,11 @@ function FriendsList({ friends }) {
 }
 
 FriendsList.propTypes = {
-  id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  avatar: PropTypes.string,
-  name: PropTypes.string,
-  isOnline: PropTypes.string,
+  friends: PropTypes.array.isRequired,
+  // id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  // avatar: PropTypes.string,
+  // name: PropTypes.string,
+  // isOnline: PropTypes.string,
 };
 
 export default FriendsList;

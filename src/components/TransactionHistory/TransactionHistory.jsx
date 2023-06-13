@@ -1,4 +1,4 @@
-import { func, object } from 'prop-types';
+import PropTypes from 'prop-types';
 import styles from './TransactionHistory.module.css';
 
 // function getObjectEntries(obj) {
@@ -42,6 +42,10 @@ function TransactionHistory({ transactions }) {
       </tbody>
     </table>
   );
+}
+
+TransactionHistory.protoTypes = {
+  transactions: PropTypes.array.isRequired
 }
 
 export default TransactionHistory;

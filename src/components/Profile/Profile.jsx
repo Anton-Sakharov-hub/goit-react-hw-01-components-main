@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import PropTypes from 'prop-types';
 import styles from './Profile.module.css';
 
 function addPointerToNumber(number) {
@@ -29,11 +30,17 @@ function Profile({ user }) {
     <div className={styles.cardWrap}>
       <div className={styles.discription}>
         <div className={styles.thumb}>
-          <img src={avatar} alt={`${username}'s avatar`} className={styles.avatar} />
+          <img
+            src={avatar}
+            alt={`${username}'s avatar`}
+            className={styles.avatar}
+          />
         </div>
         <p className={clsx(styles.cardInfo, styles.mainText)}>{username}</p>
         <p className={`${styles.cardInfo} ${styles.secondaryText}`}>@{tag}</p>
-        <p className={`${styles.cardInfo} ${styles.secondaryText}`}>{location}</p>
+        <p className={`${styles.cardInfo} ${styles.secondaryText}`}>
+          {location}
+        </p>
       </div>
       <ul className={styles.stats}>
         <li className={styles.statsItem}>
@@ -55,6 +62,8 @@ function Profile({ user }) {
   );
 }
 
+Profile.propTypes = {
+  user: PropTypes.object.isRequired,
+};
+
 export default Profile;
-
-
