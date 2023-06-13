@@ -3,17 +3,18 @@ import styles from './FriendsList.module.css';
 
 function FriendsList({ friends }) {
   return (
-    <section className={styles.wrap}>
-      <ul className={styles.friendsList}>
-        {friends?.map(({ id, avatar, name, isOnline }) => (
-          <li className={styles.item} key={id}>
-            <span className={styles.status} style={{backgroundColor: isOnline ? "green" : "red"}}></span>
-            <img className={styles.avatar} src={avatar} alt={name} />
-            <p className={styles.name}>{name}</p>
-          </li>
-        ))}
-      </ul>
-    </section>
+    <ul className={styles.friendsList}>
+      {friends?.map(({ id, avatar, name, isOnline }) => (
+        <li className={styles.item} key={id}>
+          <span
+            className={styles.status}
+            style={{ backgroundColor: isOnline ? 'green' : 'red' }}
+          ></span>
+          <img className={styles.avatar} src={avatar} alt={name} />
+          <p className={styles.name}>{name}</p>
+        </li>
+      ))}
+    </ul>
   );
 }
 

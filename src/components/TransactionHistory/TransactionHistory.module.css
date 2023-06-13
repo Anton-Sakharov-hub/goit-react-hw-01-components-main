@@ -1,7 +1,6 @@
 .table {
   width: 500px;
-
-  margin: 20px;
+  margin: 0 auto;
   /* border: 1px solid #dddddd; */
   border-collapse: separate;
   border: none;
@@ -49,5 +48,3 @@
 .table tbody tr:last-child td:last-child {
   border-bottom-right-radius: 2px;
 }
-
-

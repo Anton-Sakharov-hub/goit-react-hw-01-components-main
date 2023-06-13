@@ -1,9 +1,7 @@
 .cardWrap {
-  margin-top: 15px;
   width: 300px;
   align-items: center;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   border-radius: 8px;
   /* border: 1px solid rgb(228, 228, 228); */
   overflow: hidden;

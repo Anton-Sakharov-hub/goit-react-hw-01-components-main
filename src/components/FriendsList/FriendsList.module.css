@@ -1,9 +1,6 @@
-.wrap {
-  margin: 20px 0;
-}
-
 .friedsList {
   display: flex;
+  margin: 0 auto;
 }
 
 .item {
@@ -17,9 +14,8 @@
   border-radius: 4px;
 }
 
-.item:not(:last-child){
+.item:not(:last-child) {
   margin-bottom: 20px;
-
 }
 
 .avatar {
