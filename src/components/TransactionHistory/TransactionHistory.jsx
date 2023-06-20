@@ -28,10 +28,10 @@ function TransactionHistory({ transactions }) {
   return (
     <table className={styles.table}>
       <thead>
-        <tr className={styles.thead}>{createTheadMarkup(transactions[0])}</tr>
+        <tr>{createTheadMarkup(transactions[0])}</tr>
       </thead>
 
-      <tbody className={styles.tbody}>
+      <tbody>
         {transactions.map(transn => (
           <tr className={styles.tbodyRow} key={transn.id}>
             <td>{transn.type}</td>
@@ -45,8 +45,8 @@ function TransactionHistory({ transactions }) {
 }
 
 TransactionHistory.protoTypes = {
-  transactions: PropTypes.array.isRequired
-}
+  transactions: PropTypes.array.isRequired,
+};
 
 export default TransactionHistory;
 

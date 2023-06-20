@@ -15,8 +15,6 @@ function addPointerToNumber(number) {
   return number;
 }
 
-addPointerToNumber(1555);
-
 function Profile({ user }) {
   const {
     avatar,
